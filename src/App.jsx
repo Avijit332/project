@@ -51,9 +51,7 @@ function App() {
     <div className="app">
       <header className="navbar">
         <h1>ShopEase</h1>
-        <div className="cart-info">
-          🛒 {cart.length} Items | ₹{total}
-        </div>
+        <div className="cart-info">🛒 {cart.length} Items | ₹{total}</div>
       </header>
 
       <section className="hero">
@@ -71,9 +69,7 @@ function App() {
                 <img src={product.image} alt={product.name} />
                 <h3>{product.name}</h3>
                 <p>₹{product.price}</p>
-                <button onClick={() => addToCart(product)}>
-                  Add to Cart
-                </button>
+                <button onClick={() => addToCart(product)}>Add to Cart</button>
               </div>
             ))}
           </div>
@@ -93,10 +89,7 @@ function App() {
                     <p>₹{item.price}</p>
                   </div>
 
-                  <button
-                    className="remove-btn"
-                    onClick={() => removeFromCart(index)}
-                  >
+                  <button className="remove-btn" onClick={() => removeFromCart(index)}>
                     Remove
                   </button>
                 </div>
